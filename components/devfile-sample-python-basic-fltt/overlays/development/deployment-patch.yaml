@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-fltt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-rtkh-tenant/appstudio/devfile-sample-python-basic-fltt@sha256:65f73b891a2eb6a96ff3b26208d6bef93256e8220fb6f6e0133513182e6704b2
+        name: my-python
+        resources: {}
+status: {}
